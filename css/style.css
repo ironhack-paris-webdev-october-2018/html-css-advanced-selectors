@@ -1,0 +1,58 @@
+/*
+ * Child Selector (all the <li> CHILDREN of tags with class "menu"
+ */
+.menu > li {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 3px;
+  list-style: none;
+}
+
+em {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+ * Descendant Selector (all the <em> DESCENDANTS of tags with class "list")
+ */
+.list em {
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+
+.special-link {
+  border: 1px solid black;
+  padding: 20px 50px;
+  background-color: chartreuse;
+  font-size: 20px;
+}
+
+/*
+ * Adjacent Sibling Selector (<p> immediately after a tag with class "special-link")
+ */
+.special-link + p {
+  color: grey;
+}
+
+/*
+ * Comma (apply the same properties to all these tags)
+ * - keeps your CSS code DRY
+ * - recommended: each separate selector on a new line
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.no-margin {
+  margin: 0;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
